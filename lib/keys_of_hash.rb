@@ -6,5 +6,6 @@ class Hash
         result_arr.push(key)
       end
     end
+    result_arr
   end
 end
