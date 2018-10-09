@@ -1,9 +1,11 @@
 class Hash
-  def keys_of(arguments)
+  def keys_of(*arguments)
     result_arr = []
-    self.each do |key, val|
-      if val == arguments
-        result_arr.push(key)
+    arguments.each do |arg|
+      self.each do |key, val|
+        if val == arg
+          result_arr.push(key)
+        end
       end
     end
     result_arr
